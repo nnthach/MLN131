@@ -93,10 +93,15 @@
 
 .message {
   margin-bottom: 12px;
+  display: flex;
 }
 
 .message.user {
-  text-align: right;
+  justify-content: flex-end;
+}
+
+.message.assistant {
+  justify-content: flex-start;
 }
 
 .message-content {
@@ -105,11 +110,14 @@
   border-radius: 14px;
   max-width: 80%;
   font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .message.user .message-content {
   background: linear-gradient(135deg, #6366f1, #3b82f6);
   color: white;
+  text-align: left;
 }
 
 .message.assistant .message-content {
