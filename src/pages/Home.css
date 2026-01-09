@@ -109,7 +109,6 @@
 .card {
   background: white;
   border-radius: 15px;
-  padding: 2rem;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -117,6 +116,7 @@
   text-decoration: none;
   color: inherit;
   border: 2px solid transparent;
+  padding: 32px 42px;
 }
 
 .card:hover {
@@ -129,7 +129,6 @@
   font-size: 3.5rem;
   margin-bottom: 1rem;
   display: inline-block;
-  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -235,6 +234,59 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.review-banner {
+  width: 100%;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+}
+
+.review-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.review-info h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.review-desc {
+  color: #fdf2f8;
+  max-width: 520px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.review-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  background: #fff;
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.review-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cta-icon {
+  font-size: 26px;
 }
 
 /* ===== RESPONSIVE ===== */

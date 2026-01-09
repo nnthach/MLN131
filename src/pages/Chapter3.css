@@ -1,6 +1,6 @@
 /* ===== BANNER SECTION ===== */
 .banner {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
   display: flex;
@@ -151,47 +151,54 @@
   font-weight: 500;
 }
 
-/* Navigation Buttons */
 .navigation-buttons {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 3rem;
-  flex-wrap: wrap;
 }
 
+/* Base button */
 .nav-btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
   transition: all 0.3s ease;
-  cursor: pointer;
-  border: 2px solid transparent;
+  width: auto !important;
+  max-width: fit-content;
+  flex: 0 0 auto;
 }
 
+/* Previous button */
+.prev-btn {
+  background: #ffffff;
+  color: #7c3aed;
+  border: 2px solid #7c3aed;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.15);
+}
+
+.prev-btn:hover {
+  background: #7c3aed;
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+/* Next / Exercise button */
 .next-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  color: #ffffff;
+  /* box-shadow: 0 10px 30px rgba(236, 72, 153, 0.35); */
 }
 
 .next-btn:hover {
-  transform: translateX(5px);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-}
-
-.home-btn {
-  background: white;
-  color: #667eea;
-  border-color: #667eea;
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
-}
-
-.home-btn:hover {
-  background: #667eea;
-  color: white;
-  transform: translateX(-5px);
+  transform: translateX(4px);
+  box-shadow: 0 14px 40px rgba(236, 72, 153, 0.45);
 }
 
 /* ===== RESPONSIVE ===== */

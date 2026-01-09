@@ -15,7 +15,7 @@ function ChatBox() {
   ]);
 
   const messagesEndRef = useRef(null);
-  const GEMINI_KEY = "";
+  const GEMINI_KEY = import.meta.env.VITE_API_GEMINI_KEY;
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });

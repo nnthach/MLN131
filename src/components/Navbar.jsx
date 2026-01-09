@@ -7,7 +7,7 @@ export default function Navbar() {
     <header className="navbar-header">
       <nav className="navbar">
         <div className="navbar-brand">
-          <span className="brand-text">MLN131 Nhóm 1</span>
+          <span className="brand-text">MLN131 Chương 2</span>
         </div>
         <div className="navbar-menu">
           <Link to="/" className="nav-link">

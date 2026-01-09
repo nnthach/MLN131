@@ -19,21 +19,21 @@ export default function Home() {
       <section className="cards-section">
         <div className="cards-container">
           <Link to="/chapter2" className="card">
-            <div className="card-icon">🏭</div>
+            <div className="card-icon">👷‍♂️</div>
             <h3>Giai Cấp Công Nhân</h3>
             <p>Vai trò và sứ mệnh lịch sử của giai cấp công nhân</p>
           </Link>
 
           <Link to="/chapter3" className="card">
-            <div className="card-icon">🇻🇳</div>
-            <h3>Cộng Hòa Xã Hội</h3>
+            <div className="card-icon">🌾</div>
+            <h3>Sứ Mệnh Lịch Sử</h3>
             <p>Sứ mệnh lịch sử của giai cấp công nhân Việt Nam</p>
           </Link>
 
           <Link to="/exercise" className="card">
             <div className="card-icon">📚</div>
-            <h3>Bài Tập & Luyện Tập</h3>
-            <p>Ôn tập và kiểm tra kiến thức về chủ nghĩa xã hội</p>
+            <h3>Bài Tập Luyện Tập</h3>
+            <p>Ôn tập và kiểm tra kiến thức</p>
           </Link>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="section-image">
-            <div className="placeholder-image">🏭</div>
+            <div className="placeholder-image">👷‍♂️</div>
           </div>
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function Home() {
       <section className="content-section section-3">
         <div className="section-container">
           <div className="section-image">
-            <div className="placeholder-image">🇻🇳</div>
+            <div className="placeholder-image">🌾</div>
           </div>
           <div className="section-content">
             <h2>Sứ Mệnh Lịch Sử của Giai Cấp Công Nhân Việt Nam</h2>
@@ -94,6 +94,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section 4: Exercise*/}
+      <div className="review-banner">
+        <div className="review-banner-inner">
+          {/* Left content */}
+          <div className="review-info">
+            <h2>Ôn Tập Qua Trò Chơi</h2>
+            <p className="review-desc">
+              Hình thức <strong>trắc nghiệm</strong> kết hợp{" "}
+              <strong>truy tìm kết quả</strong>, giúp ghi nhớ kiến thức nhanh và
+              hiệu quả hơn.
+            </p>
+          </div>
+
+          {/* Right button */}
+          <Link to="/chapter2" className="review-cta">
+            Ôn Tập Ngay
+            <span className="cta-icon">🎯</span>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
